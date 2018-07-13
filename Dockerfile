@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM rhel7.5:latest
 
 ENV PYTHONPATH /opt/pylocal/lib64/python2.7/site-packages:/opt/pylocal/lib/python2.7/site-packages/
 ENV PATH /opt/pylocal/bin:$PATH
