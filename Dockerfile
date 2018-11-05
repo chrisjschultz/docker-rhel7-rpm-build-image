@@ -1,4 +1,4 @@
-FROM rhel7.5:latest
+FROM rhel7.6:latest
 
 RUN set -x && \
     yum -y upgrade && \
