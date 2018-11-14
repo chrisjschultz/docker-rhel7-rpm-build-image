@@ -1,4 +1,4 @@
-FROM rhel7.6:latest
+FROM oraclelinux:7.6
 
 RUN set -x && \
     yum -y upgrade && \
