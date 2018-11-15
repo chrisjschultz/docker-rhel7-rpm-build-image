@@ -1,8 +1,9 @@
 FROM oraclelinux:7.6
 
 RUN set -x && \
+    yum-config-manager --enable ol7_optional_latest,ol7_addons && \
     yum -y upgrade && \
-    yum -y install sudo epel-release krb5-devel python-devel rpm-build "@Development Tools" && \
+    yum -y install xorg-x11-server-devel sudo epel-release krb5-devel python-devel rpm-build "@Development Tools" && \
     yum clean all && \
     curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
     python get-pip.py
